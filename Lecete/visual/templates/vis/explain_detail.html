@@ -1,0 +1,183 @@
+{% extends "layout/layout.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'js/detail/css/main.css' %}" />
+{% endblock css %}
+{% block content %}
+
+<!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h1>Curtain Call : Product</h1>
+            <p>저희 스마트 커튼 엔진은 공유기만 있다면 언제 어디서든지 커튼을 제어할 수 있습니다.<br>
+                스마트폰에 앱을 다운로드하시고 커튼 엔진의 설정과 등록이 끝나면, 리모컨처럼 커튼을 제어하실 수 있습니다.<br>
+                뿐만 아니라, 센서와 실시간 기상데이터를 기반한 여러 가지 자동 커튼 제어 서비스를 제공합니다.<br />
+            designed by <a href="{% url 'index2' %}">TEAM_KUWHAWHA</a></p>
+        </div>
+        <video autoplay loop muted playsinline src="{% static 'img/detail/banner.mp4' %}"></video>
+    </section>
+
+<!-- Highlights -->
+    <section class="wrapper">
+        <div class="inner">
+            <header class="special">
+                <h2>모드 설명</h2>
+                <p>언제 어디서든 스마트 폰 앱으로 커튼을 제어할 수 있는 저희 스마트 커튼 엔진은 사용자가 직접 제어할 뿐만 아니라, 실시간 기상데이터와 센서를 기반으로 한 여러 가지 자동 커튼 제어 기능을 제공합니다. 더 많은 정보를 원하시면 이 글 하단의 자세히 참고하세요. </p>
+            </header>
+            <div class="highlights">
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon far fa-eye"><span class="label">Icon</span></a>
+                            <h3>조경모드</h3>
+                        </header>
+                        <p>커튼으로 조경에 최적화된 환경을 만들어 드립니다. 세대에 조경을 하시는 분들은 조경모드를 통해 수시로 커튼을 제어하실 필요가 없습니다.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fas fa-plug"><span class="label">Icon</span></a>
+                            <h3>에너지 효율 모드</h3>
+                        </header>
+                        <p>기상데이터와 센서를 활용하여 계절에 따라 냉·난방비를 절약할 수 있는 환경을 조성해 드립니다. 실내에 들어오는 빛을 자동으로 조절해 에너지를 절약할 수 있습니다.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fas fa-lock"><span class="label">Icon</span></a>
+                            <h3>방범 모드</h3>
+                        </header>
+                        <p>장거리, 장시간 세대를 비울 경우 사용자의 안전을 위해 커튼을 이용한 방범 환경을 조성할 수 있습니다. 실외에서는 사용자가 있는 것처럼 보일 것입니다.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fas fa-bell"><span class="label">Icon</span></a>
+                            <h3>알람 모드</h3>
+                        </header>
+                        <p>사용자가 직접 지정한 시간에 커튼을 개폐할 수 있습니다. 수면시간에 맞춰 커튼을 제어해야 할 경우에 특히 더 효과를 볼 수 있습니다.</p>
+                    </div>
+                </section>
+<!--                <section>-->
+<!--                    <div class="content">-->
+<!--                        <header>-->
+<!--                            <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>-->
+<!--                            <h3>Faucibus consequat</h3>-->
+<!--                        </header>-->
+<!--                        <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>-->
+<!--                    </div>-->
+<!--                </section>-->
+<!--                <section>-->
+<!--                    <div class="content">-->
+<!--                        <header>-->
+<!--                            <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>-->
+<!--                            <h3>Accumsan viverra</h3>-->
+<!--                        </header>-->
+<!--                        <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>-->
+<!--                    </div>-->
+<!--                </section>-->
+            </div>
+        </div>
+    </section>
+
+<!-- CTA -->
+    <section id="cta" class="wrapper">
+        <div class="inner">
+            <h2>Curabitur ullamcorper ultricies</h2>
+            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+        </div>
+    </section>
+
+<!-- Testimonials -->
+    <section class="wrapper">
+        <div class="inner">
+            <header class="special">
+                <h2>Product Review</h2>
+                <p>저희 제품은 시사품으로 무료로 설치를 하고 리뷰를 받아오고 있습니다. 리뷰 작성시 큰 도움이 됩니다. 감사합니다. </p>
+            </header>
+            <div class="testimonials">
+                <section>
+                    <div class="content">
+                        <blockquote>
+                            <p>Not serviced yet.</p>
+                        </blockquote>
+                        <div class="author">
+                            <div class="image">
+                                <img src="{% static 'img/detail/pic01.jpg' %}" alt="" />
+                            </div>
+                            <p class="credit">- <strong>Joo In</strong> <span>CEO - KuWhaWha.</span></p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <blockquote>
+                            <p>Not serviced yet.</p>
+                        </blockquote>
+                        <div class="author">
+                            <div class="image">
+                                <img src="{% static 'img/detail/pic02.jpg' %}" alt="" />
+                            </div>
+                            <p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <blockquote>
+                            <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                        </blockquote>
+                        <div class="author">
+                            <div class="image">
+                                <img src="{% static 'img/detail/pic03.jpg' %}" alt="" />
+                            </div>
+                            <p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Accumsan montes viverra</h3>
+                    <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                </section>
+                <section>
+                    <h4>Sem turpis amet semper</h4>
+                    <ul class="alt">
+                        <li><a href="#">Dolor pulvinar sed etiam.</a></li>
+                        <li><a href="#">Etiam vel lorem sed amet.</a></li>
+                        <li><a href="#">Felis enim feugiat viverra.</a></li>
+                        <li><a href="#">Dolor pulvinar magna etiam.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Magna sed ipsum</h4>
+                    <ul class="plain">
+                        <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                        <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+
+{% endblock content %}
+{% block js %}
+    <script src="{% static 'js/detail/js/browser.min.js' %}"></script>
+    <script src="{% static 'js/detail/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'js/detail/js/util.js' %}"></script>
+    <script src="{% static 'js/detail/js//main.js' %}"></script>
+
+{% endblock js %}
