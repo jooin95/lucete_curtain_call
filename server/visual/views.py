@@ -14,7 +14,7 @@ import urllib
 from time import sleep
 
 HOST = '127.0.0.1'
-PORT = 8080
+PORT = 4000
 Lock1 = threading.Lock()
 # 접속한 클라이언트마다 새로운 쓰레드가 생성되어 통신을 하게 됩니다.
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")  # 이곳은 보통 똑같음 IP add

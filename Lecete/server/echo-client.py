@@ -1,8 +1,8 @@
 import socket
 
 
-HOST = '127.0.0.1'
-PORT = 8080
+HOST = '192.168.0.105'
+PORT = 4040
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
